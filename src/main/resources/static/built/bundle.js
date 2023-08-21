@@ -41222,7 +41222,7 @@ var PageHome = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "EXAMEN FINAL !"), /*#__PURE__*/React.createElement("div", {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "EXAMEN FINAL-BANCES"), /*#__PURE__*/React.createElement("div", {
         style: {
           "width": "100%",
           "display": "flex"
@@ -41233,34 +41233,34 @@ var PageHome = /*#__PURE__*/function (_React$Component) {
         }
       }, /*#__PURE__*/React.createElement(Titulo, {
         entidad: "ventas",
-        emoji: "\uD83C\uDFB8"
+        emoji: "\uD83D\uDED2"
       }), /*#__PURE__*/React.createElement(VentasList, {
         ventas: this.state.ventas
       }), /*#__PURE__*/React.createElement(Link, {
         to: "/nueva-venta"
-      }, "Nueva venta")), /*#__PURE__*/React.createElement("div", {
+      }, "Venta Nueva")), /*#__PURE__*/React.createElement("div", {
         style: {
           "width": "calc(100% / 3)"
         }
       }, /*#__PURE__*/React.createElement(Titulo, {
         entidad: "productos",
-        emoji: "\uD83C\uDFB5"
+        emoji: "\uD83D\uDCE6"
       }), /*#__PURE__*/React.createElement(ProductosList, {
         productos: this.state.productos
       }), /*#__PURE__*/React.createElement(Link, {
         to: "/nuevo-producto"
-      }, "Nuevo Producto")), /*#__PURE__*/React.createElement("div", {
+      }, "Producto Nuevo")), /*#__PURE__*/React.createElement("div", {
         style: {
           "width": "calc(100% / 3)"
         }
       }, /*#__PURE__*/React.createElement(Titulo, {
         entidad: "ventadetalles",
-        emoji: "\uD83D\uDC69\uD83C\uDFFC\u200D\uD83C\uDFA4"
+        emoji: "\uD83D\uDCD1"
       }), /*#__PURE__*/React.createElement(VentaDetalleList, {
         ventadetalles: this.state.ventadetalles
       }), /*#__PURE__*/React.createElement(Link, {
         to: "/nuevo-detalleventa"
-      }, "Nuevo detelle de la venta"))));
+      }, "Detalle Nuevo de la Venta"))));
     }
   }]);
   return PageHome;
@@ -41789,7 +41789,9 @@ var PageVerProducto = function PageVerProducto(props) {
       setProducto(response.entity);
     });
   }, []);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Producto"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "NOMBRE"), /*#__PURE__*/React.createElement("td", null, producto.nombre)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "PRECIO"), /*#__PURE__*/React.createElement("td", null, producto.precio))), /*#__PURE__*/React.createElement(Link, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Producto"), /*#__PURE__*/React.createElement("table", {
+    border: "2"
+  }, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "NOMBRE"), /*#__PURE__*/React.createElement("td", null, producto.nombre)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "PRECIO"), /*#__PURE__*/React.createElement("td", null, producto.precio))), /*#__PURE__*/React.createElement(Link, {
     to: "/"
   }, "Volver"));
 };
@@ -41834,7 +41836,9 @@ var PageVerVenta = function PageVerVenta(props) {
       setVenta(response.entity);
     });
   }, []);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Venta"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "TOTAL"), /*#__PURE__*/React.createElement("td", null, venta.total))), /*#__PURE__*/React.createElement(Link, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Venta"), /*#__PURE__*/React.createElement("table", {
+    border: "2"
+  }, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "TOTAL"), /*#__PURE__*/React.createElement("td", null, venta.total))), /*#__PURE__*/React.createElement(Link, {
     to: "/"
   }, "Volver"));
 };

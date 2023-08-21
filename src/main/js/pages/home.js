@@ -22,23 +22,23 @@ class PageHome extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>EXAMEN FINAL !</h1>
+				<h1>EXAMEN FINAL-BANCES</h1>
 
 				<div style={{"width": "100%", "display": "flex"}}>
 					<div style={{"width": "calc(100% / 3)"}}>
-						<Titulo entidad="ventas" emoji="🎸" />
+						<Titulo entidad="ventas" emoji="🛒" />
 						<VentasList ventas={this.state.ventas} />
-						<Link to="/nueva-venta">Nueva venta</Link>
+						<Link to="/nueva-venta">Venta Nueva</Link>
 					</div>
 					<div style={{"width": "calc(100% / 3)"}}>
-						<Titulo entidad="productos" emoji="🎵" />
+						<Titulo entidad="productos" emoji="📦" />
 						<ProductosList productos={this.state.productos} />
-						<Link to="/nuevo-producto">Nuevo Producto</Link>
+						<Link to="/nuevo-producto">Producto Nuevo</Link>
 					</div>
 					<div style={{"width": "calc(100% / 3)"}}>
-						<Titulo entidad="ventadetalles" emoji="👩🏼‍🎤" />
+						<Titulo entidad="ventadetalles" emoji="📑" />
 						<VentaDetalleList ventadetalles={this.state.ventadetalles} />
-						<Link to="/nuevo-detalleventa">Nuevo detelle de la venta</Link>
+						<Link to="/nuevo-detalleventa">Detalle Nuevo de la Venta</Link>
 					</div>
 				</div>
 

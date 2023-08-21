@@ -22,7 +22,7 @@ const PageVerProducto = (props) => {
     return (
         <>
             <h1>Ver Producto</h1>
-            <table>
+            <table border="2">
                 <tr>
                     <th>NOMBRE</th>
                     <td>{producto.nombre}</td>

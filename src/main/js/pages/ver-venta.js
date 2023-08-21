@@ -23,7 +23,7 @@ const PageVerVenta = (props) => {
     return (
         <>
             <h1>Ver Venta</h1>
-            <table>
+            <table border="2">
                 <tr>
                     <th>TOTAL</th>
                     <td>{venta.total}</td>

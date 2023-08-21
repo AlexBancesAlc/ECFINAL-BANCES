@@ -31,7 +31,7 @@ const PageVerBanda = () => {
     return (
         <>
             <h1>Banda</h1>
-            <table border="1">
+            <table border="2">
                 <tbody>
                     <tr>
                         <th>Nombre</th>
